@@ -44,7 +44,6 @@ body {
     font-family: Inter, Arial, sans-serif;
     color: #fff;
     display: grid;
-    align-items: start;
     justify-items: center;
     height: 100svh;
     margin: 0.5rem;
@@ -57,17 +56,11 @@ body {
     display: grid;
     justify-items: center;
     gap: 1rem;
-    width: 26.5rem;
-}
-
-@media(max-width: 576px) {
-    .card {
-        width: 100%;
-    }
+    width: 24rem;
 }
 
 .card__img {
-    width: 100px;
+    width: 90px;
     aspect-ratio: 1/1;
     background-image: url(https://github.com/4skinSkywalker/Assets-for-my-Codepen/blob/main/social-links-profile/avatar-jessica.jpeg?raw=true);
     background-size: cover;
@@ -82,20 +75,21 @@ body {
 }
 
 .card__title {
-    font-size: 1.5rem;
+    font-size: 1.3125rem;
     font-weight: 700;
 }
 
 .card__subtitle {
     color: #d9f972;
     font-weight: 700;
-    font-size: 0.85rem;
+    font-size: 0.75rem;
     margin-top: -0.5rem;
 }
 
 .card__description {
     font-size: 0.9rem;
-    margin-bottom: 0.75rem;
+    font-weight: 300;
+    margin-block: 0.75rem;
 }
 
 .card__social-link {
@@ -105,4 +99,11 @@ body {
     width: 100%;
     text-align: center;
     font-weight: 700;
+    font-size: 0.85rem;
+    cursor: pointer;
+}
+
+.card__social-link:hover {
+    background-color: #d9f972;
+    color: #000;
 }
